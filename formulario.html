@@ -8,18 +8,70 @@
 		<form>
 		
 			<p>
-				<label for="nome">Nome:</label>
-				<input type="text" id="nome">
+				<label for="iNome">Nome:</label>
+				<input type="text" id="iNome" maxlength ="20" placeholder="Digite seu nome aqui">
 			</p>
 			
 			<p>
 				<label for="email">E-mail:</label>
-				<input type="email" id="email">
+				<input type="email" id="email" maxlength="40" placeholder="Escreva seu E-mail" required>
 			</p>
-				<input type="submit">
-			<p>
 			
+			<p>
+				<label for="isenha">Senha:</label>
+				<input type="password" id="isenha" placeholder="Digite sua senha aqui.">
 			</p>
+			
+			<p>
+				<label for="dtnasc">Dt. Nasc:</label>
+				<input type="datetime-local" id="dtnasc">
+				<!-- <input type="time" id="dtnasc"> -->
+				<!-- <input type="date" id="dtnasc">-->
+			</p>
+			
+			<p>
+				<label for="idade">Idade:</label>
+				<input type="number" id="idade" placeholder="Digite." min="0.00" max="5.00" step=".01">
+			</p>
+			
+			<p>
+				<input type="radio" id="imanha" name="nTurno" value="M" checked>
+				<label for="imanha">Manhã</label>
+				
+				<input type="radio" id="itarde" name="nTurno" value="T">
+				<label for="itarde">Tarde</label>
+				
+				<input type="radio" id="inoite" name="nTurno" value="N">
+				<label for="inoite">Noite</label>
+			</p>
+			
+			<p>
+				<input type="checkbox" id="iAtivo" checked>
+				<label for="iAtivo">Usuário ativo</label>
+			
+			
+			<p>
+				<label for="iObs">Obs:</label>
+				<textarea id="iObs" placeholder="Digite..."></textarea>
+			</p>
+			
+			<p>
+				<label for="iCurso">Curso:</label>
+				<select id="iCurso">
+				
+				<option>Des. de Sistemas</<option>
+				
+				<option>Mecatrônica</<option>
+				
+				</select>
+			</p>
+			
+			<p>
+				<input type="reset" value="Limpar">
+				<input type="submit" value="Salvar">
+			</p>
+
+			
 		</form>
 		
 	</body>
