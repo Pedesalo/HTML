@@ -4,9 +4,9 @@ import time
 
 driver = webdriver.Chrome()
 
-driver.get("file:///C:/Users/claus_katzer/Documents/Teste-de-sistemas/index.html")
+driver.get("file:///C:/Users/andre_r_borges/Documents/DESENVOLVIMENTO-TESTE/index.html")
 
-nome_input = driver.find_element(By.ID, "name")
+nome_input = driver.find_element(By.ID,"name")
 nome_input.send_keys("João da Silva")
 
 cpf_input = driver.find_element(By.ID, "cpf")
@@ -16,7 +16,7 @@ endereco_input = driver.find_element(By.ID, "address")
 endereco_input.send_keys("Rua das Flores, 123")
 
 telefone_input = driver.find_element(By.ID, "phone")
-telefone_input.send_keys("11987654321")
+telefone_input.send_keys("1987654321")
 
 submit_button = driver.find_element(By.CSS_SELECTOR, "button[type='submit']")
 submit_button.click()
