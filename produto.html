@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Cliente</h2>
+        <form action="/submit" method="post">
+            <label for="iCodProd">Código do Produto:</label>
+            <input type="number" id="iCodProd" name="nCodProd">
+
+            <label for="iProd" >Produto:</label>
+            <input type="text" id="iProd" name="nProd">
+
+            <label for="iCat" >Categoria:</label>
+            <input type="text" id="iCat" name="nCat">
+
+            <label for="iVal">Valor:</label>
+            <input type="number" id="iVal" name="nVal" step=".01">
+
+            <label for="iQtd" >Quantidade em Estoque:</label>
+            <input type="text" id="iQtd" name="nQtd">
+
+            <label for="iDescProd" >Descrição do Produto:</label>
+            <input type="text" id="iDescProd" name="nDescProd">
+
+            <label for="iForn" >Fornecedor:</label>
+            <input type="text" id="iForn" name="nForn">
+
+            <label for="iCodBar" >Código de Barras:</label>
+            <input type="number" id="iCodBar" name="nCodBar">
+
+            <label for="iPeso" >Peso(Kg):</label>
+            <input type="number" id="iPeso" name="nPeso" step=".01">
+
+            <label for="iDimen" >Dimenssões(cm):</label>
+            <input type="number" id="iDimen" name="nDimen" step=".01">
+
+            <label for="iStatus" >Status:</label>
+            <select id="iStatus" name="nStatus">
+                <option value="Ativo">Ativo</option>
+                <option value="Inativo">Inativo</option>
+                <option value="Promoção">Promoção</option>
+            </select>
+
+            <label for="iDescVal" >Desconto(%):</label>
+            <input type="number" id="iDescVal" name="nDescVal" step=".01">
+
+            <label for="iDatVal" >Data de Validade:</label>
+            <input type="date" id="iDatVal" name="nDatVal">
+
+            <label for="iSKU" >SKU (Código único):</label>
+            <input type="text" id="iSKU" name="nSKU">
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
